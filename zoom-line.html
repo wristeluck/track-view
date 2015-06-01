@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Track</title>
+<meta charset="utf-8">
+<style>
+
+svg {
+  font: 10px sans-serif;
+}
+
+.area {
+  fill: steelblue;
+  clip-path: url(#clip);
+}
+
+.redline {
+  fill: none;
+  stroke: red;
+  stroke-width: 1.5px;
+  clip-path: url(#clip);
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
+html, body, #wrapper {
+  width: 1000px;
+  height: 100%;
+}
+
+#chart {
+  float: top;
+}
+
+#map-canvas {
+  width: 1000px;
+  height: 500px;
+}
+
+</style>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="chart"></div>
+    <div id="map-canvas"></div>
+  </div>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="thirdparty/jquery.min.js"></script>
+    <script src="thirdparty/jquery-1.10.2.js"></script>
+    <script src="thirdparty/jquery-ui.js"></script>
+    <script src="thirdparty/jquery.binarytransport.js"></script>
+    <script src="thirdparty/jdataview.js"></script>
+    <script src="thirdparty/jparser.js"></script>
+    <script src="reader.js"></script> 
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+    <script src="zoom-line.js"></script>
+</body>
+</hmtl>
+
